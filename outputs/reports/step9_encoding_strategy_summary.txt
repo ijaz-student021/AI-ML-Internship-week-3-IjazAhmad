@@ -1,0 +1,141 @@
+
+Step 9 — Categorical Variable Analysis and Encoding Strategy
+
+Encoding Strategy Table:
+                    Column  Unique_Categories  Missing_Percentage  \
+0                 MSZoning                  5                0.00   
+1                   Street                  2                0.00   
+2                    Alley                  2               93.77   
+3                 LotShape                  4                0.00   
+4              LandContour                  4                0.00   
+5                Utilities                  2                0.00   
+6                LotConfig                  5                0.00   
+7                LandSlope                  3                0.00   
+8             Neighborhood                 25                0.00   
+9               Condition1                  9                0.00   
+10              Condition2                  8                0.00   
+11                BldgType                  5                0.00   
+12              HouseStyle                  8                0.00   
+13               RoofStyle                  6                0.00   
+14                RoofMatl                  8                0.00   
+15             Exterior1st                 15                0.00   
+16             Exterior2nd                 16                0.00   
+17              MasVnrType                  3               59.73   
+18               ExterQual                  4                0.00   
+19               ExterCond                  5                0.00   
+20              Foundation                  6                0.00   
+21                BsmtQual                  4                2.53   
+22                BsmtCond                  4                2.53   
+23            BsmtExposure                  4                2.60   
+24            BsmtFinType1                  6                2.53   
+25            BsmtFinType2                  6                2.60   
+26                 Heating                  6                0.00   
+27               HeatingQC                  5                0.00   
+28              CentralAir                  2                0.00   
+29              Electrical                  5                0.07   
+30             KitchenQual                  4                0.00   
+31              Functional                  7                0.00   
+32             FireplaceQu                  5               47.26   
+33              GarageType                  6                5.55   
+34            GarageFinish                  3                5.55   
+35              GarageQual                  5                5.55   
+36              GarageCond                  5                5.55   
+37              PavedDrive                  3                0.00   
+38                  PoolQC                  3               99.52   
+39                   Fence                  4               80.75   
+40             MiscFeature                  4               96.30   
+41                SaleType                  9                0.00   
+42           SaleCondition                  6                0.00   
+43  YearBuilt_Decade_Label                 15                0.00   
+
+    Dominant_Percentage Encoding_Strategy  \
+0                 78.84     onehot_encode   
+1                 99.59              drop   
+2                 54.95              drop   
+3                 63.36     onehot_encode   
+4                 89.79     onehot_encode   
+5                 99.93              drop   
+6                 72.05     onehot_encode   
+7                 94.66     onehot_encode   
+8                 15.41  frequency_encode   
+9                 86.30     onehot_encode   
+10                98.97              drop   
+11                83.56     onehot_encode   
+12                49.73     onehot_encode   
+13                78.15     onehot_encode   
+14                98.22              drop   
+15                35.27  frequency_encode   
+16                34.52  frequency_encode   
+17                75.68              drop   
+18                62.05      label_encode   
+19                87.81      label_encode   
+20                44.32     onehot_encode   
+21                45.61      label_encode   
+22                92.13      label_encode   
+23                67.02     onehot_encode   
+24                30.22     onehot_encode   
+25                88.33     onehot_encode   
+26                97.81              drop   
+27                50.75      label_encode   
+28                93.49     onehot_encode   
+29                91.43     onehot_encode   
+30                50.34      label_encode   
+31                93.15     onehot_encode   
+32                49.35      label_encode   
+33                63.09     onehot_encode   
+34                43.87     onehot_encode   
+35                95.07              drop   
+36                96.16              drop   
+37                91.78     onehot_encode   
+38                42.86              drop   
+39                55.87              drop   
+40                90.74              drop   
+41                86.78     onehot_encode   
+42                82.05     onehot_encode   
+43                26.51  frequency_encode   
+
+                                               Reason  
+0   Nominal categorical column with 10 or fewer ca...  
+1       High missing percentage or one dominant value  
+2       High missing percentage or one dominant value  
+3   Nominal categorical column with 10 or fewer ca...  
+4   Nominal categorical column with 10 or fewer ca...  
+5       High missing percentage or one dominant value  
+6   Nominal categorical column with 10 or fewer ca...  
+7   Nominal categorical column with 10 or fewer ca...  
+8   Nominal categorical column with more than 10 c...  
+9   Nominal categorical column with 10 or fewer ca...  
+10      High missing percentage or one dominant value  
+11  Nominal categorical column with 10 or fewer ca...  
+12  Nominal categorical column with 10 or fewer ca...  
+13  Nominal categorical column with 10 or fewer ca...  
+14      High missing percentage or one dominant value  
+15  Nominal categorical column with more than 10 c...  
+16  Nominal categorical column with more than 10 c...  
+17      High missing percentage or one dominant value  
+18                       Ordinal quality scale exists  
+19                       Ordinal quality scale exists  
+20  Nominal categorical column with 10 or fewer ca...  
+21                       Ordinal quality scale exists  
+22                       Ordinal quality scale exists  
+23  Nominal categorical column with 10 or fewer ca...  
+24  Nominal categorical column with 10 or fewer ca...  
+25  Nominal categorical column with 10 or fewer ca...  
+26      High missing percentage or one dominant value  
+27                       Ordinal quality scale exists  
+28  Nominal categorical column with 10 or fewer ca...  
+29  Nominal categorical column with 10 or fewer ca...  
+30                       Ordinal quality scale exists  
+31  Nominal categorical column with 10 or fewer ca...  
+32                       Ordinal quality scale exists  
+33  Nominal categorical column with 10 or fewer ca...  
+34  Nominal categorical column with 10 or fewer ca...  
+35      High missing percentage or one dominant value  
+36      High missing percentage or one dominant value  
+37  Nominal categorical column with 10 or fewer ca...  
+38      High missing percentage or one dominant value  
+39      High missing percentage or one dominant value  
+40      High missing percentage or one dominant value  
+41  Nominal categorical column with 10 or fewer ca...  
+42  Nominal categorical column with 10 or fewer ca...  
+43  Nominal categorical column with more than 10 c...  

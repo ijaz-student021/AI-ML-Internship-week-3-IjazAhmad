@@ -1,0 +1,6 @@
+
+Step 10 — Apply All Encoding Strategies
+
+Shape Before Encoding: (1460, 92)
+Shape After Encoding: (1460, 150)
+Remaining Object Columns: []

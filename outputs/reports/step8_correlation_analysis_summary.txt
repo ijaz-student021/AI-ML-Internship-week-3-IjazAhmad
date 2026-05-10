@@ -1,0 +1,41 @@
+
+Step 8 — Correlation Analysis of Engineered Features
+
+Top 20 Correlations:
+SalePrice           1.000000
+OverallQual         0.790982
+TotalSF             0.782260
+GrLivArea           0.708624
+PricePerSF          0.640602
+GarageCars          0.640409
+TotalBaths          0.631731
+GarageArea          0.623431
+TotalBsmtSF         0.613581
+1stFlrSF            0.605852
+QualCond            0.565294
+FullBath            0.560664
+TotRmsAbvGrd        0.533723
+HouseAge            0.523350
+YearBuilt           0.522897
+YearBuilt_Decade    0.515824
+RemodelAge          0.509079
+YearRemodAdd        0.507101
+GarageYrBlt         0.486362
+MasVnrArea          0.477493
+Name: SalePrice, dtype: float64
+
+Bottom 10 Correlations:
+OverallCond     0.077856
+MoSold          0.046432
+3SsnPorch       0.044584
+YrSold          0.028923
+LowQualFinSF    0.025606
+HasRemodeled    0.021933
+Id              0.021917
+MiscVal         0.021190
+BsmtHalfBath    0.016844
+BsmtFinSF2      0.011378
+Name: SalePrice, dtype: float64
+
+Engineered Features in Top 20:
+['TotalSF', 'TotalBaths', 'HouseAge', 'RemodelAge', 'QualCond', 'PricePerSF']

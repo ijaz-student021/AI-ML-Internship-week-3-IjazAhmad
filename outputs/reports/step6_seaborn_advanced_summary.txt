@@ -1,0 +1,17 @@
+
+Step 6 — Seaborn Advanced
+
+OverallQual_Bin Distribution:
+OverallQual_Bin
+Medium    1090
+High       229
+Low        141
+Name: count, dtype: int64
+
+KitchenQual Distribution:
+KitchenQual
+TA    735
+Gd    586
+Ex    100
+Fa     39
+Name: count, dtype: int64

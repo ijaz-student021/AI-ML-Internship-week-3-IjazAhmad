@@ -1,0 +1,11 @@
+
+Step 3 — Multi-Variable Scatter Plot
+
+Variables encoded:
+1. GrLivArea on x-axis
+2. SalePrice on y-axis
+3. OverallQual using color
+4. GarageCars using point size
+
+Pearson Correlation:
+0.7086

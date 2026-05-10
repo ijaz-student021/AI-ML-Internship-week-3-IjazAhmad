@@ -1,0 +1,5 @@
+
+Step 7 — Feature Creation
+
+New Features Created:
+['TotalSF', 'TotalBaths', 'HouseAge', 'RemodelAge', 'HasRemodeled', 'QualCond', 'PricePerSF', 'IsNewHouse']

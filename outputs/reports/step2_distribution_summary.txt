@@ -1,0 +1,10 @@
+
+Step 2 — Distribution Analysis
+
+SalePrice Mean: 180,921.20
+SalePrice Skewness: 1.8829
+Log1p(SalePrice) Mean: 12.0241
+Log1p(SalePrice) Skewness: 0.1213
+GrLivArea Mean: 1,515.46
+GrLivArea Median: 1,464.00
+GrLivArea Skewness: 1.3666
