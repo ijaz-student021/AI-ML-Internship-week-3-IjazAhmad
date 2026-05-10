@@ -1,0 +1,7 @@
+
+Step 15 — Reusable Feature Engineering Functions
+
+Functions Created:
+1. visualize_distributions(df, cols, n_cols=3)
+2. encode_quality_column(series, quality_map=None)
+3. full_scaling_pipeline(X_train, X_test, method='standard')

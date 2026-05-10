@@ -1,0 +1,5 @@
+
+Step 11 — Feature Scaling Comparison
+
+StandardScaler, MinMaxScaler, and RobustScaler were applied.
+For Week 4 Linear Regression, StandardScaler is usually preferred because it centers features around mean 0 and standard deviation 1.
